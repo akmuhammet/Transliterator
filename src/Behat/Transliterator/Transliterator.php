@@ -269,12 +269,12 @@ abstract class Transliterator
                 chr(226).chr(130).chr(172) => 'E',
                 // GBP (Pound) Sign
                 chr(194).chr(163) => '',
-                'Ä' => 'Ae',
-                'ä' => 'ae',
-                'Ü' => 'Ue',
-                'ü' => 'ue',
-                'Ö' => 'Oe',
-                'ö' => 'oe',
+                'Ä' => 'A',     // AJU edit Ae->A
+                'ä' => 'a',     // AJU edit
+                'Ü' => 'U',     // AJU edit
+                'ü' => 'u',     // AJU edit
+                'Ö' => 'O',     // AJU edit
+                'ö' => 'o',     // AJU edit
                 'ß' => 'ss',
                 // Norwegian characters
                 'Å' => 'Aa',
