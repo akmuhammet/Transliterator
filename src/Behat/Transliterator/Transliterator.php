@@ -573,6 +573,9 @@ abstract class Transliterator
             $text = strtolower($text);
         }
 
+        //AJU: replace apostrophe with empty string
+        $text = str_replace("'", '', $text);
+
         // Remove all none word characters
         $text = preg_replace('/\W/', ' ', $text);
 
